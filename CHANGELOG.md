@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.1.0
+
+**Thêm:**
+
+- `nqh-app-ux-teardown` — bóc UX + motion của app đối thủ thành quyết định sản phẩm.
+  Bóc 3 app một lượt để tách quy ước ngành khỏi lựa chọn riêng; Lớp 0 "điều kiện
+  chuyển giao" chạy trước mọi lớp khác để chặn cargo-cult copy; đếm friction và vị
+  trí paywall từ ảnh Mobbin; cột ĐỘC gắn cờ dark pattern; accessibility 5 dòng;
+  motion đo bằng ffmpeg, chấm theo mục đích trước rồi mới chấm nhanh chậm.
+  Đầu ra: TEARDOWN.md + MOTION-TOKENS.json + frame PNG làm chứng cứ.
+
+**Đổi:**
+
+- `README.md` — dọn mục "Skill còn nằm ngoài repo": bỏ 3 dòng đã gộp xong, ghi rõ
+  các skill còn lại chỉ sống trong tài khoản Claude chứ không có file trên đĩa.
+
 ## 1.0.0
 
 Gom 4 repo skill rời rạc về một repo duy nhất.

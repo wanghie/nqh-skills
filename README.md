@@ -41,6 +41,7 @@ Luật cứng:
 | Skill | Dùng khi | Gọi bằng |
 |---|---|---|
 | [`nqh-app-landing`](./skills/nqh-app-landing) | Dùng khi Hiếu muốn dựng LANDING PAGE cho một app điện thoại và/hoặc bộ ẢNH APP STORE, bắt đầu bằng việc nghiên cứu đối thủ cùng ngách rồi bóc DNA trang của họ | `làm landing cho app`, `trang giới thiệu app`, `landing page app`, `ảnh app store`, `screenshot app store`, `dựng trang bán app` |
+| [`nqh-app-ux-teardown`](./skills/nqh-app-ux-teardown) | Bóc UX app đối thủ thành quyết định sản phẩm — bóc 3 app một lượt để tách quy ước ngành khỏi lựa chọn riêng, kiểm điều kiện chuyển giao trước khi mượn cơ chế, đếm friction và… | `bóc UX app`, `teardown UX`, `bóc hiệu ứng của`, `app này UX thế nào`, `nghiên cứu app đối thủ` |
 
 ### Dev / Ops
 
@@ -96,9 +97,10 @@ Với Claude.ai / Cowork: Settings → Capabilities → Skills → upload thư m
 
 ---
 
-## Skill chạy trên máy nhưng chưa nằm trong repo
+## Skill còn nằm ngoài repo
 
-Các skill đang có trong tài khoản Claude, cần đưa vào đây khi có dịp:
+Các skill đang chạy trong tài khoản Claude (không nằm trên đĩa dưới dạng file sửa được).
+Khi nào cần version hoá thì export về đây:
 
 - [ ] `nqh-content-engine` — viết lại kịch bản dài theo giọng NQH
 - [ ] `nqh-shortform-engine` — content ngắn EN→VI
@@ -109,9 +111,6 @@ Các skill đang có trong tài khoản Claude, cần đưa vào đây khi có d
 - [ ] `nqh-app-designer` — dựng UI app từ một ý tưởng
 - [ ] `nqh-skill-forge` — skill tạo ra skill
 - [ ] `govrl-email-builder` — dựng thư onboarding GOVRL
-- [ ] `research-product-via-channel` — bóc thị trường qua 1 channel (đang ở repo `research-apps` cũ)
-- [ ] `app-ux-teardown` — teardown UX/UI app (đang ở repo `research-app` cũ)
-- [ ] `nqh-video-cutaway`, `nqh-video-finish` — pipeline edit 2 bước (đang ở nhánh `main` của repo `Skill_Video_editor` cũ)
 
 ---
 
