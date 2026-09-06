@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Symlink toàn bộ skill trong repo vào ~/.claude/skills/
+#   ./setup          cài / cập nhật symlink
+#   ./setup --clean  gỡ thêm các symlink chết trỏ về repo cũ
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DEST="$HOME/.claude/skills"
+mkdir -p "$DEST"
+
+if [[ "${1:-}" == "--clean" ]]; then
+  for l in "$DEST"/*; do
+    [[ -L "$l" ]] || continue
+    if [[ ! -e "$l" ]]; then echo "gỡ symlink chết: $(basename "$l")"; rm "$l"; fi
+  done
+fi
+
+n=0
+for d in "$ROOT"/skills/*/; do
+  [[ -f "$d/SKILL.md" ]] || continue
+  name="$(basename "$d")"
+  ln -sfn "$d" "$DEST/$name"
+  echo "  ✓ $name"
+  n=$((n+1))
+done
+echo
+echo "$n skill đã nối vào $DEST"
+echo "Mở phiên Claude Code mới để agent nhận."

@@ -1,0 +1,100 @@
+{
+  "id": "vi",
+  "label": "Khán giả Việt Nam",
+  "asr": {
+    "language": "vi",
+    "model": "large-v3",
+    "initial_prompt": "Đây là video chia sẻ về kinh doanh, AI, thương hiệu cá nhân và làm nội dung."
+  },
+  "fillers": {
+    "single": [
+      "ừ",
+      "à",
+      "ờ",
+      "ừm",
+      "ơ",
+      "hả",
+      "ế",
+      "ây",
+      "kiểu",
+      "tức"
+    ],
+    "phrases": [
+      "kiểu như là",
+      "kiểu như",
+      "thì là",
+      "thì nó",
+      "nói chung là",
+      "nói chung",
+      "tức là",
+      "cái là",
+      "cái mà",
+      "ừ thì",
+      "à thì",
+      "các bạn biết đấy",
+      "như kiểu",
+      "đại loại là",
+      "đại loại",
+      "nói thật là",
+      "thật ra thì"
+    ],
+    "keep_if_sentence_start": true
+  },
+  "cut": {
+    "silence_threshold_db": -34,
+    "min_silence_ms": 380,
+    "pad_head_ms": 120,
+    "pad_tail_ms": 140,
+    "note": "Người Việt nói liền mạch, ít khoảng nghỉ dài. Ngưỡng thấp hơn EN để không cắt vào hơi thở giữa câu."
+  },
+  "captions": {
+    "font": "Be Vietnam Pro",
+    "font_fallback": [
+      "Montserrat",
+      "Inter",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "uppercase": false,
+    "uppercase_reason": "Tiếng Việt viết hoa toàn bộ làm dấu thanh chồng lên nhau, tốc độ đọc giảm rõ. Chỉ viết hoa từ được highlight.",
+    "words_per_line": 4,
+    "max_chars_per_line": 22,
+    "font_size_pct": 6.5,
+    "primary_color": "&H00FFFFFF",
+    "highlight_color": "&H0000E5FF",
+    "outline": 4,
+    "shadow": 2,
+    "margin_v_pct": 22,
+    "line_spacing": 1.15,
+    "note": "words_per_line cao hơn EN vì từ tiếng Việt ngắn (1-2 âm tiết), 2 từ/dòng sẽ trống trải.",
+    "uppercase_highlight": true
+  },
+  "zoom": {
+    "punch_scale": 1.18,
+    "kenburns_scale": 1.1,
+    "kenburns_min_sec": 2.5,
+    "emphasis_keywords": [
+      "quan trọng",
+      "nhớ",
+      "đừng",
+      "phải",
+      "bí quyết",
+      "sự thật",
+      "vấn đề",
+      "kết quả",
+      "gấp",
+      "lần",
+      "triệu",
+      "tỷ",
+      "nghìn",
+      "phần trăm",
+      "%",
+      "không bao giờ",
+      "luôn luôn"
+    ]
+  },
+  "hook": {
+    "target_sec": 3.0,
+    "note": "Khán giả Việt trên TikTok/Reels quyết định lướt trong ~2-3s. Hook phải nằm trước giây thứ 3."
+  }
+}

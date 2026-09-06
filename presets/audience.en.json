@@ -1,0 +1,89 @@
+{
+  "id": "en",
+  "label": "International / English-speaking audience",
+  "asr": {
+    "language": "en",
+    "model": "large-v3",
+    "initial_prompt": "A talk about business, AI, personal branding and content creation."
+  },
+  "fillers": {
+    "single": [
+      "um",
+      "uh",
+      "erm",
+      "hmm",
+      "like",
+      "so",
+      "right",
+      "okay"
+    ],
+    "phrases": [
+      "you know",
+      "i mean",
+      "sort of",
+      "kind of",
+      "kinda",
+      "basically",
+      "actually",
+      "literally",
+      "at the end of the day",
+      "to be honest",
+      "if that makes sense"
+    ],
+    "keep_if_sentence_start": true
+  },
+  "cut": {
+    "silence_threshold_db": -30,
+    "min_silence_ms": 300,
+    "pad_head_ms": 80,
+    "pad_tail_ms": 100,
+    "note": "English speakers pause more between clauses; a tighter threshold is safe and keeps the pace punchy."
+  },
+  "captions": {
+    "font": "Montserrat",
+    "font_fallback": [
+      "Inter",
+      "Poppins",
+      "DejaVu Sans"
+    ],
+    "uppercase": true,
+    "uppercase_reason": "ALL CAPS is the dominant short-form convention in EN and has no diacritic collision.",
+    "words_per_line": 2,
+    "max_chars_per_line": 16,
+    "font_size_pct": 7.5,
+    "primary_color": "&H00FFFFFF",
+    "highlight_color": "&H0000E5FF",
+    "outline": 5,
+    "shadow": 2,
+    "margin_v_pct": 20,
+    "line_spacing": 1.0,
+    "note": "2 words per line, big type - the Hormozi/Opus convention.",
+    "uppercase_highlight": false
+  },
+  "zoom": {
+    "punch_scale": 1.22,
+    "kenburns_scale": 1.12,
+    "kenburns_min_sec": 2.5,
+    "emphasis_keywords": [
+      "never",
+      "always",
+      "biggest",
+      "secret",
+      "truth",
+      "mistake",
+      "problem",
+      "result",
+      "x",
+      "million",
+      "billion",
+      "percent",
+      "%",
+      "stop",
+      "listen"
+    ]
+  },
+  "hook": {
+    "target_sec": 2.0,
+    "note": "EN short-form retention curves drop hardest before second 2."
+  }
+}
