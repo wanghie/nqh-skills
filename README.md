@@ -13,7 +13,7 @@ Bộ Claude Agent Skills cá nhân của Nguyễn Quang Hiếu (WANGHIE).
 ### Claude Code
 
 ```bash
-git clone https://github.com/<user>/nqh-skills.git
+git clone https://github.com/wanghie/nqh-skills.git
 mkdir -p ~/.claude/skills
 ln -sfn "$(pwd)/nqh-skills/nqh-app-landing" ~/.claude/skills/nqh-app-landing
 ```
