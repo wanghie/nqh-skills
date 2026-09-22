@@ -3,7 +3,10 @@
 Kho skill cá nhân của Nguyễn Quang Hiếu (WANGHIE) cho Claude Code / Cowork.
 Một skill = một thư mục = một file `SKILL.md` agent tự đọc khi gặp đúng loại việc.
 
-Repo private. Đây là **nơi duy nhất** chứa skill — không tạo repo skill mới.
+Repo này **PUBLIC** — ai vào GitHub cũng đọc được. Chỉ để ở đây skill về **quy trình và kỹ thuật**.
+
+Skill mang **giọng văn, chuyện đời tư, hạ tầng riêng** nằm ở kho riêng `nqh-skills-private`
+(private, không public). Hai kho, không có kho thứ ba.
 
 ---
 
@@ -40,6 +43,7 @@ Luật cứng:
 
 | Skill | Dùng khi | Gọi bằng |
 |---|---|---|
+| [`nqh-app-designer`](./skills/nqh-app-designer) | Dùng khi Hiếu chỉ nói MỘT Ý TƯỞNG APP và muốn ra màn hình UI đẹp, bấm/sửa được — skill tự nghiên cứu đối thủ, chốt hướng thẩm mỹ, rồi dựng màn hình trên canvas | `thiết kế app`, `làm UI cho`, `dựng màn hình`, `mockup app`, `design lại app này` |
 | [`nqh-app-landing`](./skills/nqh-app-landing) | Dùng khi Hiếu muốn dựng LANDING PAGE cho một app điện thoại và/hoặc bộ ẢNH APP STORE, bắt đầu bằng việc nghiên cứu đối thủ cùng ngách rồi bóc DNA trang của họ | `làm landing cho app`, `trang giới thiệu app`, `landing page app`, `ảnh app store`, `screenshot app store`, `dựng trang bán app` |
 | [`nqh-app-ux-teardown`](./skills/nqh-app-ux-teardown) | Bóc UX app đối thủ thành quyết định sản phẩm — bóc 3 app một lượt để tách quy ước ngành khỏi lựa chọn riêng, kiểm điều kiện chuyển giao trước khi mượn cơ chế, đếm friction và… | `bóc UX app`, `teardown UX`, `bóc hiệu ứng của`, `app này UX thế nào`, `nghiên cứu app đối thủ` |
 
@@ -48,6 +52,14 @@ Luật cứng:
 | Skill | Dùng khi | Gọi bằng |
 |---|---|---|
 | [`nqh-dev-secrets`](./skills/nqh-dev-secrets) | Giữ API key và mật khẩu an toàn khi giao việc cho AI agent, và đẩy code lên GitHub mà không làm lộ gì. Dùng khi chạm tới API key, secret, .env, 1Password, biến môi trường, khi… | `merge rồi mà trang không đổi` |
+
+### Khác
+
+| Skill | Dùng khi | Gọi bằng |
+|---|---|---|
+| [`nqh-appstore-shots`](./skills/nqh-appstore-shots) | Dựng bộ ảnh App Store (iOS) chuẩn spec Apple và đẹp để duyệt — research đối thủ, chốt kịch bản 6 khung, viết caption, render PNG đúng pixel, QC luật review. Dùng khi cần bộ ảnh… | `làm ảnh App Store`, `screenshot app store`, `ảnh lên store`, `bị reject ảnh` |
+| [`nqh-broll-director`](./skills/nqh-broll-director) | Dùng skill này khi Hiếu (hoặc user) muốn TẠO PROMPT cho B-roll — chuỗi cảnh quay minh hoạ chèn vào video YouTube/talking-head | `làm prompt B-roll`, `prompt cảnh minh hoạ`, `tạo B-roll cho video`, `prompt Kling / Higgsfield`, `prompt ảnh Gemini cho video`, `minh hoạ đoạn này bằng cảnh quay` |
+| [`nqh-skill-forge`](./skills/nqh-skill-forge) | Biến một quy trình hoặc kinh nghiệm thành file SKILL.md chuẩn — bạn kể thông tin, skill lo phần còn lại. Mọi skill sinh ra đều có SỔ LỖI ĐÃ BỊ NHẮC để không lặp lại lỗi đã bị… | `viết skill`, `làm skill cho việc này`, `sửa skill`, `skill không tự bật`, `chuẩn hoá bộ skill` |
 
 ### Nghiên cứu
 
@@ -100,18 +112,16 @@ Với Claude.ai / Cowork: Settings → Capabilities → Skills → upload thư m
 
 ## Skill còn nằm ngoài repo
 
-Các skill đang chạy trong tài khoản Claude (không nằm trên đĩa dưới dạng file sửa được).
-Khi nào cần version hoá thì export về đây:
+Đã chuyển sang kho riêng [`nqh-skills-private`](https://github.com/wanghie/nqh-skills-private)
+(giọng văn + chuyện cá nhân + hạ tầng, KHÔNG public):
 
-- [ ] `nqh-content-engine` — viết lại kịch bản dài theo giọng NQH
-- [ ] `nqh-shortform-engine` — content ngắn EN→VI
-- [ ] `nqh-transcript-engine` — dịch transcript EN→VI
+- `nqh-content-engine` · `nqh-shortform-engine` · `nqh-transcript-engine` · `govrl-email-builder`
+
+Còn chỉ sống trong tài khoản Claude, chưa có file sửa được trên đĩa. Khi nào cần
+version hoá thì export về — cả hai đều thuộc kho private vì mang giọng văn:
+
 - [ ] `nqh-triky-engine` — giọng bác Tri Kỷ Cảm Xúc
 - [ ] `nqh-thumbnail-engine` — bóc DNA thumbnail
-- [ ] `nqh-broll-director` — prompt B-roll
-- [ ] `nqh-app-designer` — dựng UI app từ một ý tưởng
-- [ ] `nqh-skill-forge` — skill tạo ra skill
-- [ ] `govrl-email-builder` — dựng thư onboarding GOVRL
 
 ---
 

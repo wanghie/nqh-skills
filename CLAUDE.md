@@ -29,7 +29,10 @@ Script sẽ thoát với mã lỗi nếu tên thư mục lệch `name:`. Sửa x
 
 - Không đưa API key, token, mật khẩu, đường dẫn máy cá nhân, dữ liệu khách vào bất kỳ file nào.
 - Không commit file media (`.mp4`, `.mov`, `.wav`) — đã chặn trong `.gitignore`.
-- Không tạo repo skill mới ở nơi khác. Skill mới về đây.
+- Không tạo repo skill thứ ba. Chỉ có hai kho: kho này (public) và `nqh-skills-private`.
+- **Kho này PUBLIC.** Không đưa vào đây skill chứa giọng văn riêng, kho chuyện đời tư,
+  hay hạ tầng nội bộ (endpoint, luồng gửi mail, danh sách khách). Những skill đó về
+  `nqh-skills-private`. Không rõ thuộc kho nào thì hỏi Hiếu, đừng đoán.
 
 ## Version
 

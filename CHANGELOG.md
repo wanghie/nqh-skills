@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.3.0
+
+Tách kho: skill quy trình/kỹ thuật ở lại kho public này, skill giọng văn và chuyện
+đời tư sang kho riêng `nqh-skills-private`.
+
+**Thêm (từ skill Cloud sync về máy):**
+
+- `nqh-broll-director` — biến một ý/đoạn kịch bản thành cặp prompt: ảnh frame đầu
+  (Gemini) + video image-to-video (Kling/Higgsfield), khoá Style DNA cho cả bộ.
+  Kèm 3 file tra cứu trong `references/`.
+- `nqh-app-designer` — từ một câu ý tưởng app ra bộ màn hình UI dựng được trên canvas.
+- `nqh-appstore-shots` — bộ ảnh App Store iOS đúng pixel Apple, QC theo luật review.
+- `nqh-skill-forge` — biến một quy trình thành file SKILL.md chuẩn.
+
+**Đổi:**
+
+- `description` của `nqh-skill-forge` trước đây không có một cụm từ khoá nào nên agent
+  không tự bật. Nay đủ ba mệnh đề theo đúng luật của chính nó. `nqh-app-designer` và
+  `nqh-appstore-shots` chuẩn hoá về mệnh đề "Kích hoạt khi nói ...".
+- `README.md` + `CLAUDE.md` — ghi rõ kho này PUBLIC, và skill nào phải về kho private.
+  Mục "Skill còn nằm ngoài repo" trỏ sang `nqh-skills-private` cho 4 skill giọng văn.
+  Bỏ dòng "Repo private" sai sự thật (kho trên GitHub đang public).
+
+**Còn nợ:**
+
+- 3 tên lệch quy ước `nqh-<nhóm>-<việc>` nên rơi vào nhóm "Khác" của bảng index:
+  `nqh-broll-director`, `nqh-appstore-shots`, `nqh-skill-forge`. Giữ nguyên tên để
+  không gãy thói quen gọi skill; đổi tên là việc cần Hiếu chốt.
+
 ## 1.2.0
 
 **Thêm:**
