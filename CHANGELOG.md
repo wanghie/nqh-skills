@@ -1,5 +1,47 @@
 # Changelog
 
+## 1.3.1
+
+Cơ chế SỔ LỖI ĐÃ BỊ NHẮC áp xuống **cả 17 skill** của kho này, không chỉ skill mới.
+
+**Sửa `nqh-skill-forge` — 4 lỗi review bắt được:**
+
+- Bước 7 cũ chỉ bắt dán khối vào skill MỚI, nên skill đã có vĩnh viễn không có sổ.
+  Thêm 7b: bảng "ai áp, khi nào" cho ba tình huống.
+- Khối dán sang skill con từng ghi "trần 12 dòng" và trỏ "luật ở Bước 7" — skill con
+  không có Bước 7. Giờ khối có một bản gốc duy nhất
+  `skills/nqh-skill-forge/references/khoi-so-loi.md`, tự chứa 3 dòng luật, trần
+  thống nhất **10 dòng** suy ra từ luật `SKILL.md < 300 dòng` (27 dòng khung + 1
+  dòng trắng + 10 dòng sổ = 38 → thân skill dừng dưới 262 dòng).
+- Hai hợp đồng chọi nhau (Bước 7 "nếu THÀNH LUẬT" vs footer "ghi vô điều kiện") gộp
+  về 7d, có blockquote thứ tự ưu tiên: **sửa output LUÔN LUÔN, ghi sổ CHỈ KHI THÀNH
+  LUẬT**, 7d thắng mọi chỗ nói khác.
+- 7c trả lời dứt khoát "ghi vào bản nào": FILE TRONG REPO, kèm đường dẫn cả hai kho.
+
+**Thêm `tools/check_so_loi.py`:** bắt thiếu khối, bảng sai 4 cột, sổ quá 10 dòng,
+nguồn lạ ngoài `Hiếu · review · tự đo`, khối lệch bản gốc, file vượt 300 dòng. Nó
+còn tự đối chiếu con số trần ghi trong khối với số dòng thật của khối, nên "tham
+chiếu chết" kiểu trần 12/10 không tái diễn âm thầm. Hiện: 17/17 skill sạch, 0 lỗi.
+
+**Áp xuống 16 skill còn lại:** mỗi SKILL.md thêm `## SỔ LỖI ĐÃ BỊ NHẮC` ở cuối,
+bảng 4 cột `Ngày | Nguồn | SAI | ĐÚNG` **rỗng** (chỉ header) + 3 dòng luật. Không
+bịa dòng mẫu cho skill chưa từng bị feedback — bảng rỗng là trung thực.
+
+**4 file vượt trần 300 dòng, KHÔNG cắt nội dung có sẵn** (cần Hiếu chốt tách
+`references/`):
+
+| Skill | Trước | Sau | Ghi chú |
+|---|---|---|---|
+| `nqh-research-creator-product` | 655 | 683 | đã vượt từ trước |
+| `nqh-research-niche-product` | 460 | 488 | đã vượt từ trước |
+| `nqh-app-ux-teardown` | 357 | 385 | đã vượt từ trước |
+| `nqh-appstore-shots` | 294 | 322 | **mới cán mốc vì thêm sổ** |
+
+**Đổi khác:** cột NGUỒN bắt buộc cho mọi dòng sổ. Sổ của `nqh-skill-forge` có 6
+dòng, nguồn `review` hoặc `tự đo`, không dòng nào gán cho Hiếu. Checklist 13 dòng,
+bảng tra nhanh 12 tình huống, cặp SAI/ĐÚNG và cách xử test kích hoạt tách sang
+`skills/nqh-skill-forge/references/tra-cuu.md`.
+
 ## 1.3.0
 
 Tách kho: skill quy trình/kỹ thuật ở lại kho public này, skill giọng văn và chuyện
