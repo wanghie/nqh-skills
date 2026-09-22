@@ -1,5 +1,42 @@
 # Changelog
 
+## 1.3.1
+
+Áp cơ chế **SỔ LỖI ĐÃ BỊ NHẮC** xuống toàn bộ skill trong kho, và vá 4 lỗi của
+`nqh-skill-forge` mà bộ máy review bắt được.
+
+**`nqh-skill-forge` — vá 4 lỗi:**
+
+- Cơ chế không đi theo skill con: Bước 7 cũ chỉ bắt dán khối vào skill MỚI. Thêm 7b,
+  bảng "ai áp, khi nào" cho skill ĐÃ CÓ.
+- Tham chiếu chết: khối dán sang skill con từng trỏ "luật ghi và trần sổ ở Bước 7" —
+  mục không tồn tại trong skill con — và ghi trần 12 dòng trong khi luật thật là 10.
+  Khối giờ tự chứa 3 dòng luật; trần thống nhất **10 dòng**, suy ra được từ luật
+  `SKILL.md < 300 dòng` (22 dòng khung + 10 dòng sổ = 32 → thân skill dưới 268).
+- Hai hợp đồng mâu thuẫn: Bước 7 gác ghi sổ sau điều kiện THÀNH LUẬT, footer điều 2
+  lại bắt ghi vô điều kiện. Gộp về 7d làm bản duy nhất và nêu thứ tự ưu tiên.
+- Không trả lời "ghi vào bản nào": thêm 7c — ghi vào FILE TRONG REPO, vì
+  `~/.claude/skills/<ten-skill>` là symlink trỏ về đó.
+- Sổ của chính skill-forge: thêm **cột NGUỒN** (`Hiếu` / `review` / `tự đo`). Dòng
+  mẫu về lỗi đại từ bị bỏ (ngoài phạm vi skill này), dòng nhắc "21 skill" bỏ con số.
+- Tách `Checklist`, `Bảng tra nhanh`, 2 cặp SAI/ĐÚNG và `Test kích hoạt` sang
+  `references/tra-cuu.md` để thân file còn chỗ cho sổ lên đủ trần (292 dòng, thân 267).
+
+**16 skill còn lại trong kho — thêm mục `## SỔ LỖI ĐÃ BỊ NHẮC` ở cuối SKILL.md:**
+
+Bảng 4 cột `Ngày | Nguồn | SAI | ĐÚNG`, **để rỗng, chỉ header**, kèm 3 dòng luật
+(cách nhận ra feedback · ghi gì, trong đó cột NGUỒN bắt buộc · trần 10 dòng). Không
+bịa dòng mẫu cho skill chưa từng bị feedback.
+
+**Vượt 300 dòng, cần tách phần tra cứu — chưa cắt, chỉ báo:**
+
+| Skill | Dòng | Ghi chú |
+|---|---|---|
+| `nqh-research-creator-product` | 678 | đã 655 trước khi thêm sổ |
+| `nqh-research-niche-product` | 483 | đã 460 trước khi thêm sổ |
+| `nqh-app-ux-teardown` | 380 | đã 357 trước khi thêm sổ |
+| `nqh-appstore-shots` | 317 | 293 trước khi thêm sổ — **cán mốc vì thêm sổ** |
+
 ## 1.3.0
 
 Tách kho: skill quy trình/kỹ thuật ở lại kho public này, skill giọng văn và chuyện
