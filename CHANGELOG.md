@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.2.0
+
+**Thêm:**
+
+- `nqh-research-niche-product` — quét CẢ MỘT NGÁCH trên TikTok/Instagram/YouTube cho
+  tới khi bão hoà, lọc creator bán sản phẩm của chính họ, ra bảng vật lý/digital/dịch
+  vụ × giá × tính năng × chân dung khách, matrix định vị, TAM/SAM/SOM và khoảng trống
+  đã kiểm bằng xu hướng xã hội. Khác `research-product-via-channel` (bóc MỘT kênh).
+
+**Sửa:**
+
+- `tools/build_index.py` — cụm từ khoá trong `description` viết bằng nháy kép escape
+  (`\"...\"`) bị lọt dấu `\` vào bảng index. Nay strip dấu `\` cuối cụm và bỏ cụm
+  trùng lặp.
+
 ## 1.1.0
 
 **Thêm:**

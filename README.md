@@ -55,6 +55,7 @@ Luật cứng:
 |---|---|---|
 | [`nqh-research-creator-product`](./skills/nqh-research-creator-product) | Bóc tách 1 sản phẩm cụ thể của creator qua công tắc loại (SaaS / Dịch vụ / Vật lý / Digital / Cộng đồng) + bộ lớp riêng theo loại. Có nhánh dịch vụ với kinh tế đơn vị + kinh tế… | `research sản phẩm creator`, `bóc tách sản phẩm X`, `clone sản phẩm này được không` |
 | [`nqh-research-market`](./skills/nqh-research-market) | Research sâu một thị trường bằng nhiều agent chạy song song, ra một bản research đã kiểm chứng, mọi nhận định gắn nhãn độ tin, số phải tự tính chứ không trích lại, bắt buộc có… | `research market`, `research thị trường`, `làm research về`, `so sánh thị trường` |
+| [`nqh-research-niche-product`](./skills/nqh-research-niche-product) | Quét CẢ MỘT NGÁCH trên TikTok/Instagram/YouTube cho tới khi bão hoà, lọc creator bán sản phẩm của chính họ, ra bảng vật lý/digital/dịch vụ × giá × tính năng × chân dung khách,… | `tìm sản phẩm ngách`, `find niche product`, `cả ngách này ai đang bán gì`, `quét cả ngách` |
 | [`nqh-research-teardown`](./skills/nqh-research-teardown) | Phân rã một sản phẩm có sẵn để hiểu ruột của nó, viết thành bản đặc tả sạch, rồi build bản của riêng mình trong một phiên làm việc mới chỉ đọc đặc tả. Đúng phương pháp… | `teardown`, `phân rã sản phẩm`, `reverse engineer`, `build cái tương tự X`, `sản phẩm X hoạt động thế nào` |
 
 ### Video

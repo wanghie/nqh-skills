@@ -43,7 +43,14 @@ def group_of(name: str) -> str:
 
 def split_desc(desc: str):
     """Tách description thành (dùng khi, từ khoá kích hoạt)."""
-    triggers = re.findall(r'["“\u2018\']([^"”\u2019\']+)["”\u2019\']', desc)
+    raw = re.findall(r'["“\u2018\']([^"”\u2019\']+)["”\u2019\']', desc)
+    triggers, seen = [], set()
+    for t in raw:
+        # description viết trong YAML nháy kép để lại dấu \ ở cuối mỗi cụm
+        t = t.strip().rstrip("\\").strip()
+        if t and t not in seen:
+            seen.add(t)
+            triggers.append(t)
     body = re.split(r'(?:Kích hoạt|Dùng khi user nói|Dùng khi nói)', desc)[0].strip()
     body = body.rstrip(" .")
     if len(body) > 180:
