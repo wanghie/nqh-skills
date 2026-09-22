@@ -59,7 +59,7 @@ Luật cứng:
 |---|---|---|
 | [`nqh-appstore-shots`](./skills/nqh-appstore-shots) | Dựng bộ ảnh App Store (iOS) chuẩn spec Apple và đẹp để duyệt — research đối thủ, chốt kịch bản 6 khung, viết caption, render PNG đúng pixel, QC luật review. Dùng khi cần bộ ảnh… | `làm ảnh App Store`, `screenshot app store`, `ảnh lên store`, `bị reject ảnh` |
 | [`nqh-broll-director`](./skills/nqh-broll-director) | Dùng skill này khi Hiếu (hoặc user) muốn TẠO PROMPT cho B-roll — chuỗi cảnh quay minh hoạ chèn vào video YouTube/talking-head | `làm prompt B-roll`, `prompt cảnh minh hoạ`, `tạo B-roll cho video`, `prompt Kling / Higgsfield`, `prompt ảnh Gemini cho video`, `minh hoạ đoạn này bằng cảnh quay` |
-| [`nqh-skill-forge`](./skills/nqh-skill-forge) | Biến một quy trình hoặc kinh nghiệm thành file SKILL.md chuẩn — bạn kể thông tin, skill lo phần còn lại. Mọi skill sinh ra đều có SỔ LỖI ĐÃ BỊ NHẮC để không lặp lại lỗi đã bị… | `viết skill`, `làm skill cho việc này`, `sửa skill`, `skill không tự bật`, `chuẩn hoá bộ skill` |
+| [`nqh-skill-forge`](./skills/nqh-skill-forge) | Biến một quy trình hoặc kinh nghiệm thành file SKILL.md chuẩn — bạn kể thông tin, skill lo phần còn lại. Mọi skill, mới lẫn đã có, đều mang một SỔ LỖI ĐÃ BỊ NHẮC nằm trong… | `viết skill`, `làm skill cho việc này`, `sửa skill`, `skill không tự bật`, `chuẩn hoá bộ skill` |
 
 ### Nghiên cứu
 
